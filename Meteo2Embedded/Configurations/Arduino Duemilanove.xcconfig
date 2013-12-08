@@ -1,0 +1,41 @@
+//
+//  Duemilanove.xcconfig
+//  Board config file
+//  ----------------------------------
+//  Developed with embedXcode
+//
+//  Project mpideXcode8
+//  Created by Rei VILO on 12/03/12
+//  Copyright © 2012 http://embeddedcomputing.weebly.com
+//  Licence CC = BY SA NC
+//
+
+// Duemilanove.xcconfig file
+// Created by Joel Saltzman on 4/12/13
+// Copyright © 2013 joelsaltzman.com
+// Licence CC = BY SA NC
+//
+
+// Board identifier
+// see Boards.txt for .name=Arduino Uno (16 MHz)
+//
+BOARD_TAG = uno
+
+// Port (optionnal)
+// most common are /dev/tty.usbserial*, /dev/tty.usbmodem* or /dev/tty.uart*
+//
+BOARD_PORT = /dev/tty.usbserial*
+AVRDUDE_BAUDRATE = 57600
+
+// References for Xcode code-sense
+// see Boards.txt for .build.mcu=
+// specify ARDUINO_APP for Arduino, MPIDE_APP for Mpide, WIRING_APP for Wiring, ENERGIA_APP for Energia, MAPLE_APP for MapleIDE
+//
+GCC_PREPROCESSOR_DEFINITIONS = AVR_ATmega328P
+HEADER_SEARCH_PATHS = $(ARDUINO_APP)/** $(SKETCHBOOK_DIR)/Libraries/**
+
+// Maximum RAM size in bytes
+// given by <tag>.upload.maximum_ram_size in boards.txt for Maple and Teensy
+//
+MAX_RAM_SIZE = 2048
+

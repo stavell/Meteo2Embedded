@@ -1,0 +1,14 @@
+	
+	embedXcode
+	----------------------------------
+	Embedded Computing on Xcode 4
+	
+	
+	© Rei VILO, 2010-2013
+	CC = BY NC SA	
+	http://embedXcode.weebly.com/
+	
+	
+embedXcode • Apr 21, 2013 release 44 • Compatibility for MPIDE version 0x01000202
+embedXcode • Apr 21, 2013 release 45 • Support for chipKIT Max32 board
+	
